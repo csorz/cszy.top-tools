@@ -16,6 +16,7 @@
   "dependencies": {
     "@ytfee/npm-yt-ouid": "0.0.9",
     "pinia": "^2.1.7",
+    "simple-mind-map": "^0.10.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

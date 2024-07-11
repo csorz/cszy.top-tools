@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/HashView.vue')
     },
     {
+      path: '/simple-mind-map',
+      name: 'simple-mind-map',
+      component: () => import('../views/SimpleMindMap.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
