@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),// createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -15,9 +15,14 @@ const router = createRouter({
       component: () => import('../views/HashView.vue')
     },
     {
-      path: '/simple-mind-map',
-      name: 'simple-mind-map',
-      component: () => import('../views/SimpleMindMap.vue')
+      path: '/colorpicker',
+      name: 'colorpicker',
+      component: () => import('../views/ColorPicker.vue')
+    },
+    {
+      path: '/mind-map',
+      name: 'mind-map',
+      component: () => import('../views/MindMap.vue')
     },
     {
       path: '/about',
