@@ -1,0 +1,63 @@
+{
+    "iconType": "folder",
+    "type": "folder",
+    "name": "小班上",
+    "folderId": "1****",
+    "filledIn": true,
+    "introductions": [
+        {
+            "iconType": "course",
+            "name": "小班上简介",
+            "id": "654321-749f-4f43-8975-28f35a3a5e6a",
+            "type": "block_editor",
+            "size": 5734268
+        }
+    ],
+    "mindMap": {
+        "style": "样式1",
+        "iconType": "picture",
+        "name": "网络图",
+        "format": "jpg",
+        "type": "picture",
+        "ouid": "****",
+        "url": "https://****",
+        "size": 111,
+        "width": 750,
+        "height": 422
+    },
+    "children": [
+        {
+            "iconType": "folder",
+            "type": "folder",
+            "name": "主题一",
+            "folderId": "2****",
+            "filledIn": false,
+            "children": [
+                {
+                    "iconType": "folder",
+                    "type": "folder",
+                    "name": "子主题1",
+                    "folderId": "3****",
+                    "filledIn": false,
+                    "children": [
+                        {
+                            "iconType": "folder",
+                            "type": "folder",
+                            "name": "板块1",
+                            "folderId": "4****",
+                            "filledIn": false,
+                            "children": [
+                                {
+                                    "iconType": "?",
+                                    "name": "某某活动",
+                                    "id": "12345678-749f-4f43-8975-28f35a3a5e6a",
+                                    "type": "kindergarten_activity"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
