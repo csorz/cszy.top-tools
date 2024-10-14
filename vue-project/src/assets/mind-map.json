@@ -1,369 +1,365 @@
 {
-    "layout": "mindMap",
-    "root": {
-      "data": {
-        "text": "<p><strong style=\"color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px; font-weight: bold; font-style: normal; text-decoration: none;\">小班上</strong></p>",
-        "expand": true,
-        "richText": true,
-        "isActive": false,
-        "uid": "e890d461-d466-4bae-88e5-e8e21d1d9f14"
-      },
-      "children": [
-        {
-          "data": {
-            "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题一：幼儿园</span></p>",
-            "generalization": null,
-            "richText": true,
-            "expand": true,
-            "isActive": false,
-            "uid": "5272a829-81dd-40e3-84ce-9905cfbc4823"
-          },
-          "children": [
-            {
-              "data": {
-                "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题1</span></p>",
-                "richText": true,
-                "expand": true,
-                "isActive": false,
-                "uid": "6f95941b-80b5-4260-9328-693210fc3769"
-              },
-              "children": [
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">版块1-1</span></p>",
-                    "uid": "8a74acd3-b045-4c60-924f-ecd4ec00ed0f",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false
-                  },
-                  "children": [
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-1</span></p>",
-                        "uid": "a12d6da1-9b96-482e-8d4c-1a887e3c26b4",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false
-                      },
-                      "children": []
-                    },
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-2</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "87032620-bc4d-4a7e-9f53-c81101826f1b"
-                      },
-                      "children": []
-                    },
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-3</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "8ad6c39e-0ba0-4f15-9db0-a2ea00295168"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块1-2</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "08e7b471-e662-4892-8e5d-5ef16ad8d83e"
-                  },
-                  "children": []
-                }
-              ]
-            },
-            {
-              "data": {
-                "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题2</span></p>",
-                "richText": true,
-                "expand": true,
-                "isActive": false,
-                "uid": "be86e7fd-0943-40bb-944b-8eee05beb3f0"
-              },
-              "children": [
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-1</span></p>",
-                    "uid": "429a8e39-1df8-4ba7-986b-6a6e6f9d7ac9",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false
-                  },
-                  "children": []
-                },
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-2</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "57b6061d-58a3-40dc-a42e-10e258de5984"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "data": {
-            "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题二：幼儿园</span></p>",
-            "expand": true,
-            "richText": true,
-            "isActive": false,
-            "uid": "56423275-6101-42c5-b669-2725f0be5e31"
-          },
-          "children": [
-            {
-              "data": {
-                "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题1</span></p>",
-                "richText": true,
-                "expand": true,
-                "isActive": false,
-                "uid": "f21da4e5-1050-4ca6-b57a-3f021c5e6a35"
-              },
-              "children": [
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">版块1-1</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "b4f84cf1-89b3-466a-a85d-da6bd40a4d98"
-                  },
-                  "children": [
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-1</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "4d09ce1b-f327-4510-9367-54f873711e19"
-                      },
-                      "children": []
-                    },
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-2</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "dac5f289-3ee2-4895-ae56-29aaf31f8893"
-                      },
-                      "children": []
-                    },
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-3</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "4eca3e07-6937-45a8-bfee-f75f436f5678"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块1-2</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "e8cf4cfa-454e-4a8b-8ed8-4e263e4480f5"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "data": {
-            "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题三：幼儿园</span></p>",
-            "generalization": null,
-            "richText": true,
-            "expand": true,
-            "isActive": false,
-            "uid": "3759c62d-be1b-46a6-ad80-d1dda8993a26"
-          },
-          "children": [
-            {
-              "data": {
-                "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题1</span></p>",
-                "richText": true,
-                "expand": true,
-                "isActive": false,
-                "uid": "52980bff-e7b7-4193-9c58-0c933c815397"
-              },
-              "children": [
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">版块1-1</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "27f132a2-b7b5-4405-897d-61ef206d0eed"
-                  },
-                  "children": [
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-1</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "61d2e349-3921-41cc-b8c4-1adaaa69341c"
-                      },
-                      "children": []
-                    },
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-2</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "12d51686-0924-400d-a300-c1df0ddb0ac2"
-                      },
-                      "children": []
-                    },
-                    {
-                      "data": {
-                        "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-3</span></p>",
-                        "expand": true,
-                        "richText": true,
-                        "isActive": false,
-                        "uid": "8a032c8c-9dc4-4268-8ce1-33668801d6ff"
-                      },
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块1-2</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "49e2aa75-4ce2-41e3-a19c-f727c4ea6fc3"
-                  },
-                  "children": []
-                }
-              ]
-            },
-            {
-              "data": {
-                "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题2</span></p>",
-                "richText": true,
-                "expand": true,
-                "isActive": false,
-                "uid": "a10442fc-740f-4174-96f0-a7f7a47ce5f6"
-              },
-              "children": [
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-1</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "aa9e4ca8-7173-4671-8de0-1f56f64a7bb0"
-                  },
-                  "children": []
-                },
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-2</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "833a4e10-1a95-4b08-88d3-f53089886a53"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "data": {
-            "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题四：幼儿园</span></p>",
-            "expand": true,
-            "richText": true,
-            "isActive": false,
-            "uid": "6ff37f4d-e494-4fb7-89c2-cfdc037b79c8"
-          },
-          "children": [
-            {
-              "data": {
-                "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题2</span></p>",
-                "richText": true,
-                "expand": true,
-                "isActive": false,
-                "uid": "c5ebaa9b-6171-47f8-80a8-4b5edef32d67"
-              },
-              "children": [
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-1</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "724a1199-fdc6-4825-bc8d-cb23ccfe263e"
-                  },
-                  "children": []
-                },
-                {
-                  "data": {
-                    "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-2</span></p>",
-                    "expand": true,
-                    "richText": true,
-                    "isActive": false,
-                    "uid": "17cf2e30-448c-4716-b324-367c01ff8a31"
-                  },
-                  "children": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
+  "layout": "mindMap",
+  "root": {
+    "data": {
+      "text": "<p><strong style=\"color: rgb(255, 255, 255); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px; font-weight: bold; font-style: normal; text-decoration: none;\">小班上</strong></p>",
+      "expand": true,
+      "richText": true,
+      "isActive": false,
+      "uid": "e890d461-d466-4bae-88e5-e8e21d1d9f14"
     },
-    "theme": {
-      "template": "minions",
-      "config": { "backgroundColor": "#FFFFFF", "paddingX": 6, "paddingY": 11 }
-    },
-    "view": {
-      "transform": {
-        "scaleX": 1,
-        "scaleY": 1,
-        "shear": 0,
-        "rotate": 0,
-        "translateX": -228.00000000000017,
-        "translateY": 3.9999999999999574,
-        "originX": 0,
-        "originY": 0,
-        "a": 1,
-        "b": 0,
-        "c": 0,
-        "d": 1,
-        "e": -228.00000000000017,
-        "f": 3.9999999999999574
+    "children": [
+      {
+        "data": {
+          "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题一：幼儿园</span></p>",
+          "generalization": null,
+          "richText": true,
+          "expand": true,
+          "isActive": false,
+          "uid": "5272a829-81dd-40e3-84ce-9905cfbc4823"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题1</span></p>",
+              "richText": true,
+              "expand": true,
+              "isActive": false,
+              "uid": "6f95941b-80b5-4260-9328-693210fc3769"
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">版块1-1</span></p>",
+                  "uid": "8a74acd3-b045-4c60-924f-ecd4ec00ed0f",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false
+                },
+                "children": [
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-1</span></p>",
+                      "uid": "a12d6da1-9b96-482e-8d4c-1a887e3c26b4",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-2</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "87032620-bc4d-4a7e-9f53-c81101826f1b"
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-3</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "8ad6c39e-0ba0-4f15-9db0-a2ea00295168"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块1-2</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "08e7b471-e662-4892-8e5d-5ef16ad8d83e"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "data": {
+              "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题2</span></p>",
+              "richText": true,
+              "expand": true,
+              "isActive": false,
+              "uid": "be86e7fd-0943-40bb-944b-8eee05beb3f0"
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-1</span></p>",
+                  "uid": "429a8e39-1df8-4ba7-986b-6a6e6f9d7ac9",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false
+                },
+                "children": []
+              },
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-2</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "57b6061d-58a3-40dc-a42e-10e258de5984"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
       },
-      "state": {
-        "scale": 1,
-        "x": -228.00000000000017,
-        "y": 3.9999999999999574,
-        "sx": 0,
-        "sy": 0
+      {
+        "data": {
+          "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题二：幼儿园</span></p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "56423275-6101-42c5-b669-2725f0be5e31"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题1</span></p>",
+              "richText": true,
+              "expand": true,
+              "isActive": false,
+              "uid": "f21da4e5-1050-4ca6-b57a-3f021c5e6a35"
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">版块1-1</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "b4f84cf1-89b3-466a-a85d-da6bd40a4d98"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-1</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "4d09ce1b-f327-4510-9367-54f873711e19"
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-2</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "dac5f289-3ee2-4895-ae56-29aaf31f8893"
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-3</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "4eca3e07-6937-45a8-bfee-f75f436f5678"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块1-2</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "e8cf4cfa-454e-4a8b-8ed8-4e263e4480f5"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题三：幼儿园</span></p>",
+          "generalization": null,
+          "richText": true,
+          "expand": true,
+          "isActive": false,
+          "uid": "3759c62d-be1b-46a6-ad80-d1dda8993a26"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题1</span></p>",
+              "richText": true,
+              "expand": true,
+              "isActive": false,
+              "uid": "52980bff-e7b7-4193-9c58-0c933c815397"
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">版块1-1</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "27f132a2-b7b5-4405-897d-61ef206d0eed"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-1</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "61d2e349-3921-41cc-b8c4-1adaaa69341c"
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-2</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "12d51686-0924-400d-a300-c1df0ddb0ac2"
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">活动1-1-3</span></p>",
+                      "expand": true,
+                      "richText": true,
+                      "isActive": false,
+                      "uid": "8a032c8c-9dc4-4268-8ce1-33668801d6ff"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块1-2</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "49e2aa75-4ce2-41e3-a19c-f727c4ea6fc3"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "data": {
+              "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题2</span></p>",
+              "richText": true,
+              "expand": true,
+              "isActive": false,
+              "uid": "a10442fc-740f-4174-96f0-a7f7a47ce5f6"
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-1</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "aa9e4ca8-7173-4671-8de0-1f56f64a7bb0"
+                },
+                "children": []
+              },
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-2</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "833a4e10-1a95-4b08-88d3-f53089886a53"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; font-weight: normal; font-style: normal; text-decoration: none;\">主题四：幼儿园</span></p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "6ff37f4d-e494-4fb7-89c2-cfdc037b79c8"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">子主题2</span></p>",
+              "richText": true,
+              "expand": true,
+              "isActive": false,
+              "uid": "c5ebaa9b-6171-47f8-80a8-4b5edef32d67"
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-1</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "724a1199-fdc6-4825-bc8d-cb23ccfe263e"
+                },
+                "children": []
+              },
+              {
+                "data": {
+                  "text": "<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">板块2-2</span></p>",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false,
+                  "uid": "17cf2e30-448c-4716-b324-367c01ff8a31"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
       }
+    ]
+  },
+  "theme": { "template": "gold", "config": {} },
+  "view": {
+    "transform": {
+      "scaleX": 0.8,
+      "scaleY": 0.8000000000000002,
+      "shear": 0,
+      "rotate": 0,
+      "translateX": -345.20000000000095,
+      "translateY": 70.39999999999961,
+      "originX": 0,
+      "originY": 0,
+      "a": 0.8,
+      "b": 0,
+      "c": 0,
+      "d": 0.8,
+      "e": -345.20000000000095,
+      "f": 70.39999999999961
+    },
+    "state": {
+      "scale": 0.8,
+      "x": -345.20000000000095,
+      "y": 70.39999999999961,
+      "sx": -345.20000000000095,
+      "sy": 70.39999999999961
     }
   }
-  
+}

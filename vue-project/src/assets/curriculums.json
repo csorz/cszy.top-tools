@@ -58,6 +58,51 @@
                     ]
                 }
             ]
+        },
+        {
+            "iconType": "folder",
+            "type": "folder",
+            "name": "主题二",
+            "folderId": "2****",
+            "filledIn": false
+        },
+        {
+            "iconType": "folder",
+            "type": "folder",
+            "name": "主题三",
+            "folderId": "2****",
+            "filledIn": false,
+            "children": [{
+                "iconType": "folder",
+                "type": "folder",
+                "name": "子主题3-1",
+                "folderId": "3****",
+                "filledIn": false,
+                "children": [
+                    {
+                        "iconType": "folder",
+                        "type": "folder",
+                        "name": "板块3-1",
+                        "folderId": "4****",
+                        "filledIn": false,
+                        "children": [
+                            {
+                                "iconType": "?",
+                                "name": "某某活动",
+                                "id": "12345678-749f-4f43-8975-28f35a3a5e6a",
+                                "type": "kindergarten_activity"
+                            }
+                        ]
+                    }
+                ]
+            }]
+        },
+        {
+            "iconType": "folder",
+            "type": "folder",
+            "name": "主题四",
+            "folderId": "2****",
+            "filledIn": false
         }
     ]
 }
