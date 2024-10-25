@@ -1,126 +1,190 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import MindMap from "simple-mind-map";
-import { v4 as uuidv4 } from 'uuid';
+import { onMounted, ref } from 'vue';
 // import * as dataJson from "../assets/mind-map.json"
-import Export from 'simple-mind-map/src/plugins/Export.js'
-// import Export from 'simple-mind-map/src/Export.js' Use this path for versions below v0.6.0
 import * as curriculumsJson from "../assets/curriculums.json"
 
 const urlParams = new URLSearchParams(window.location.search);
-const currentTheme = urlParams.get('t');
+const mindMapBase64 = ref('')
 
-// 主题预览图
-import themeImgMap from 'simple-mind-map-plugin-themes/themeImgMap'
-// 主题颜色，填充、字体大小、字号
-import themeList from 'simple-mind-map-plugin-themes/themeList'
+import { v4 as uuid } from 'uuid'
+import MindMap from 'simple-mind-map'
+import Export from 'simple-mind-map/src/plugins/Export.js'
+import Themes from 'simple-mind-map-plugin-themes'
 
-// TODO 先默认，初始化时设置主题
-
-console.log(themeList, themeImgMap)
-
+// 注册主题
+Themes.init(MindMap)
+// 注册导出插件
 MindMap.usePlugin(Export)
 
-function getText(richText: string) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(richText, "text/html");
-  return doc.body.textContent;
-}
+console.log('Themes', Themes)
 
-function nodeConcatenation (obj: any) {
-  let newObj: any = {
-    "data": {
-      "text": `<p><span style=\"color: rgb(34, 34, 34); font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 12px; font-weight: normal; font-style: normal; text-decoration: none;\">${obj.name}</span></p>`,
-      "richText": true,
-      "expand": true,
-      "isActive": false,
-      "uid": uuidv4()
-    }
-  }
-  if (obj.children) {
-    newObj.children = obj.children.map((item: any) => {
-      return nodeConcatenation(item)
-    })
-  } else {
-    newObj.children = []
-  }
-  return newObj
-}
+const themesRef = ref([])
+const selectedTheme = ref('default')
 
-function conversion(data: any) {
-  console.log(typeof data, data)
-  let newObj = {
-    "layout": "mindMap",
-    "root": null,
-    "theme": {
-      "template": currentTheme,
-      // "config": { "backgroundColor": "#FFFFFF", "paddingX": 6, "paddingY": 11 }
+/**
+ * 主题列表
+ * @returns object
+ * @item dark: true
+ * @item img: "/node_modules/simple-mind-map-plugin-themes/src/imgs/classic.jpg"
+ * @item name: "脑图经典"
+ * @item theme: {lineColor: '#fff', lineWidth: 3, generalizationLineWidth: 3, generalizationLineColor: '#fff', backgroundColor: 'rgb(58, 65, 68)', …}
+ * @item value: "classic"
+ */
+function mindMapThemes() {
+  return [
+    {
+      name: "默认",
+      value: "default",
+      theme: {},
+      dark: false
     },
-    "view": {
-      "transform": {
-        "scaleX": 1,
-        "scaleY": 1,
-        "shear": 0,
-        "rotate": 0,
-        "translateX": -228.00000000000017,
-        "translateY": 3.9999999999999574,
-        "originX": 0,
-        "originY": 0,
-        "a": 1,
-        "b": 0,
-        "c": 0,
-        "d": 1,
-        "e": -228.00000000000017,
-        "f": 3.9999999999999574
-      },
-      "state": {
-        "scale": 1,
-        "x": -228.00000000000017,
-        "y": 3.9999999999999574,
-        "sx": 0,
-        "sy": 0
-      }
-    }
-  }
+    ...Themes.lightList,
+    ...Themes.darkList
+  ]
+}
 
-  newObj.root = nodeConcatenation(curriculumsJson)
-  return newObj
+interface IActivityData {
+  name: string
+  children: IActivityData[] | []
+}
+
+interface IMindMapData {
+  data: {
+    text: string
+    richText: boolean
+    expand: boolean
+    isActive: boolean
+    uid: string
+  }
+  children: IMindMapData[]
+}
+
+/**
+ * 创建级联节点
+ * @param data object
+ * @returns
+ */
+function nodeConcatenation(data: IActivityData): IMindMapData {
+  return {
+    data: {
+      text: data.name,
+      richText: false, // 如果设为true，导出图片可能文字缺失
+      expand: true,
+      isActive: false,
+      uid: uuid()
+    },
+    children: data.children
+      ? data.children.map((item: IActivityData) => {
+          return nodeConcatenation(item)
+        })
+      : []
+  }
+}
+
+/**
+ * 数据转换：活动数据结构转为mind-map数据结构
+ * @param data object
+ * @returns
+ */
+function conversion(data: IActivityData) {
+  return {
+    layout: 'mindMap',
+    root: nodeConcatenation(data),
+  }
+}
+
+/**
+ * @description 获取思维导图图片base64
+ * @param width 图片宽度
+ * @param height 图片高度
+ * @param data 思维导图数据结构
+ * @param theme 主题
+ * @returns string base64图片
+ */
+function getMindMapImage({
+  width,
+  height,
+  theme,
+  data
+}: {
+  width: number
+  height: number
+  theme: string
+  data: IActivityData
+}): Promise<string> {
+  return new Promise((resolve, reject) => {
+    try {
+      const el = document.createElement('div')
+      el.style.position = 'fixed'
+      el.style.width = `${width}px`
+      el.style.height = `${height}px`
+      el.style.top = `-${height}px`
+      el.style.left = `-${width}px`
+      document.body.appendChild(el)
+      const mindMap = new MindMap({
+        el,
+        width,
+        height,
+        theme: theme,
+        readonly: true,
+        exportPaddingX: 20,
+        exportPaddingY: 20,
+        initRootNodePosition: ['left', 'center'],
+      } as any) // 官方包就是any
+
+      const mindMapData = conversion(data)
+      if (mindMapData?.root) {
+        mindMap.setFullData(mindMapData)
+      } else {
+        // 否则使用setData方法导入
+        mindMap.setData(mindMapData)
+      }
+      // // 设置主题
+      // mindMap.setTheme('')
+      // // 清空主题
+      // mindMap.setThemeConfig({}, true)
+      // // 复位视图
+      // mindMap.view.reset();
+      // 确保渲染完毕后生成图片base64
+      mindMap.render(async () => {
+        // 居中显示
+        mindMap.view.fit(() => {}, false, undefined)
+        // 导出图片base64
+        const imgRes = await mindMap.export('png', false)
+        // 移除节点
+        document.body.removeChild(el)
+        mindMap.destroy()
+        resolve(imgRes)
+      })
+    } catch (err) {
+      reject(err)
+    }
+  })
 }
 
 onMounted(async () => {
-  const mindMap = new MindMap({
-    el: document.getElementById("mindMapContainer"),
-  } as any);
-
-  const data: any = conversion(curriculumsJson)
-  if (data?.root) {
-    mindMap.setFullData(data)
-  } else {
-  // 否则使用setData方法导入
-    mindMap.setData(data)
-  }
-
-  // 确保渲染完毕后生成图片base64
-  mindMap.render(async () => {
-    // 导入数据后有可能新数据渲染在可视区域外了，所以为了更好的体验，可以复位一下视图的变换
-    // mindMap.view.reset();
-    
-    // 清空主题
-    mindMap.setThemeConfig({}, true)
-    // 设置主题
-    mindMap.setTheme(currentTheme)
-    // 居中显示
-    mindMap.view.fit();
-    
-    const imgRes = await mindMap.export('png', false)
-    console.log('imgRes', imgRes)
-  })
+  themesRef.value = mindMapThemes()
+  console.log('themesRef.value', themesRef.value)
+  themeChange()
 })
+async function themeChange () {
+  mindMapBase64.value = await getMindMapImage({
+    width: 1024,
+    height: 768,
+    theme: selectedTheme.value,
+    data: curriculumsJson
+  })
+}
 </script>
 
 <template>
   <main>
-    <div id="mindMapContainer"></div>
+    <div id="mindMapContainer">
+      <select v-model="selectedTheme" @change="themeChange()">
+        <option v-for="item in themesRef" :value="item.value">{{ item.name }}</option>
+      </select>
+      <img style="width: 90%;" :src="mindMapBase64" />
+    </div>
   </main>
 </template>
 

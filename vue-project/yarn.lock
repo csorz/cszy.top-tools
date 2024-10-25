@@ -3257,10 +3257,10 @@ simple-mind-map-plugin-themes@^1.0.0:
   dependencies:
     esbuild "^0.17.15"
 
-simple-mind-map@0.11.2:
-  version "0.11.2"
-  resolved "https://registry.npmmirror.com/simple-mind-map/-/simple-mind-map-0.11.2.tgz#28e8e8e1962bbe79eb89b85b793cb08f690f7be2"
-  integrity sha512-9nHnjAwbVe6QK+6Fmf3SfCJuAcK5u2M44ZCqM72A6yP27JDtkGwQ3YvbRbMVI+UkCA6Oq/CZRg1crRylqvtsuQ==
+simple-mind-map@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.npmmirror.com/simple-mind-map/-/simple-mind-map-0.12.0.tgz#d2a43acfd26a973da06478b8be6ca81e3522e950"
+  integrity sha512-PBR7UtZPzAVsPHnDqdC0ihLN38PpNw4CS6l4rhYtHrMJYOUIO5DzEmNfqEAbuWnDDbv6f8skgmN+FM7ZN40nuQ==
   dependencies:
     "@svgdotjs/svg.js" "3.2.0"
     deepmerge "^1.5.2"
