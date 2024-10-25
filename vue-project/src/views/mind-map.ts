@@ -1,10 +1,13 @@
 import { v4 as uuid } from 'uuid'
 import MindMap from 'simple-mind-map'
 import Export from 'simple-mind-map/src/plugins/Export.js'
-import themeImgMap from 'simple-mind-map-plugin-themes/themeImgMap'
-import themeList from 'simple-mind-map-plugin-themes/themeList'
+import Themes from 'simple-mind-map-plugin-themes'
 
+// 注册主题
+Themes.init(MindMap)
+// 注册导出插件
 MindMap.usePlugin(Export)
+
 interface IActivityData {
   name: string
   children: IActivityData[] | []
@@ -61,12 +64,16 @@ export class MyMindMap {
    * @item value: "classic"
    */
   mindMapThemes() {
-    themeList.forEach((item: { img: string; value: string; name: string }) => {
-      item.img = themeImgMap[item.value] || undefined
-    })
-    return {
-      themeList
-    }
+    return [
+      {
+        name: "默认",
+        value: "default",
+        theme: {},
+        dark: false
+      },
+      ...Themes.lightList,
+      ...Themes.darkList
+    ]
   }
 
   /**
@@ -93,27 +100,14 @@ export class MyMindMap {
 
   /**
    * 数据转换：活动数据结构转为mind-map数据结构
-   * @param currentTheme string
    * @param data object
    * @returns
    */
-  conversion(currentTheme: string, data: IActivityData) {
+  conversion(data: IActivityData) {
     return {
       layout: 'mindMap',
       root: this.nodeConcatenation(data),
-      theme: {
-        template: currentTheme
-      }
     }
-  }
-
-  /**
-   * 切换主题
-  */
-  changeTheme(theme: string) {
-    this.theme = theme
-    // 设置主题
-    this.mindMap.setTheme(this.theme)
   }
 
   /**
@@ -124,40 +118,64 @@ export class MyMindMap {
    * @param theme 主题
    * @returns string base64图片
    */
-  exportPng(): Promise<string> {
+  getMindMapImage({
+    width,
+    height,
+    theme,
+    data
+  }: {
+    width: number
+    height: number
+    theme: string
+    data: IActivityData
+  }): Promise<string> {
     return new Promise((resolve, reject) => {
       try {
-        const mindMapData = this.conversion(this.theme, this.data)
+        const el = document.createElement('div')
+        el.style.position = 'fixed'
+        el.style.width = `${width}px`
+        el.style.height = `${height}px`
+        el.style.top = `-${height}px`
+        el.style.left = `-${width}px`
+        document.body.appendChild(el)
+        const mindMap = new MindMap({
+          el,
+          width,
+          height,
+          theme: theme,
+          readonly: true,
+          exportPaddingX: 20,
+          exportPaddingY: 20,
+          initRootNodePosition: ['left', 'center'],
+        } as any) // 官方包就是any
+  
+        const mindMapData = this.conversion(data)
         if (mindMapData?.root) {
-          this.mindMap.setFullData(mindMapData)
+          mindMap.setFullData(mindMapData)
         } else {
           // 否则使用setData方法导入
-          this.mindMap.setData(mindMapData)
+          mindMap.setData(mindMapData)
         }
-
+        // // 设置主题
+        // mindMap.setTheme('')
+        // // 清空主题
+        // mindMap.setThemeConfig({}, true)
+        // // 复位视图
+        // mindMap.view.reset();
         // 确保渲染完毕后生成图片base64
-        this.mindMap.render(async () => {
-          // 复位视图
-          // this.mindMap.view.reset();
-          // // 清空主题
-          // this.mindMap.setThemeConfig({}, true)
-
+        mindMap.render(async () => {
           // 居中显示
-          this.mindMap.view.fit(() => {}, false, undefined)
+          mindMap.view.fit(() => {}, false, undefined)
           // 导出图片base64
-          const imgRes = await this.mindMap.export('png', true)
+          const imgRes = await mindMap.export('png', false)
+          // 移除节点
+          document.body.removeChild(el)
+          mindMap.destroy()
           resolve(imgRes)
         })
       } catch (err) {
         reject(err)
       }
     })
-  }
-
-  destroyed() {          
-    // 移除节点
-    this.el && document.body.removeChild(this.el)
-    this.mindMap.destroyed()
-    this.mindMap = null
   }
 }
